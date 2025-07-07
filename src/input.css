@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", "sans-serif";
+  --color-textCol: #303030;
+
+  --color-footer: #00968a;
+
+  --grid-cols-auto-fit-200: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Navbar */
+.navbar {
+  padding: 15px 0 15px 0;
+}
+
+.navbar.scrolling-active {
+  background-color: #00968a;
+  padding: 25px 0 25px 0;
+}
+
+/* .navbar.scrolling-active .box-navbar .brand a i img {
+  color: white;
+} */
+
+.navbar .box-navbar .navigation {
+  display: none;
+}
+
+.navbar.scrolling-active .box-navbar .sosmed ul li a {
+  color: white;
+}
+
+.navbar.scrolling-active .box-navbar .sosmed ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar .box-navbar .navigation i.ri-close-line {
+  display: none;
+}
+
+.navbar .box-navbar .navigation a.join-community-button {
+  display: none;
+}
+
+.navbar.scrolling-active .box-navbar .sosmed i {
+  color: white;
+}
+/* Navbar */
+
+/* Header */
+.hero {
+  align-items: center;
+  justify-items: center;
+}
+.hero .box-hero .box:nth-child(1) h1 {
+  color: #303030;
+}
+
+.hero .box-hero .box:nth-child(1) button {
+  background-color: rgb(219, 219, 219);
+  border: none;
+  color: #303030;
+}
+
+.hero .box-hero .box:nth-child(1) button:hover {
+  background-color: #22808f;
+  color: white;
+}
+/* Header */
+
+/* Artikel Job Card */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  background: rgba(77, 77, 77, 0.7);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modalcontent {
+  position: relative;
+  background: #fff;
+  width: 600px;
+  max-width: 90%;
+  padding: 1em 2em;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.modalclose {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  color: black;
+  font-size: 36px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+/* Artikel Job Card */
+
+/* testtimonial */
+.swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 4rem;
+}
+
+.swiper-pagination-bullet {
+  background: #cbd5e0;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #22c55e;
+}
+
+.testimonial-card {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.testimonial-card .testimonial-text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-card .profile-info {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.profile-image-wrapper {
+  width: 96px; /* w-24 */
+  height: 96px; /* h-24 */
+  border-radius: 9999px; /* rounded-full */
+  margin-left: auto;
+  margin-right: auto; /* mx-auto */
+  margin-bottom: 1rem; /* mb-4 */
+  overflow: hidden;
+  border: 4px solid #22c55e; /* ring-4 ring-green-500 */
+  outline: 2px solid white; /* ring-offset-2 (simulasi) */
+}
+/* testtimonial */ /* Partner */
+
+/* ceo section */
+.card:hover .profile-image {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.card:hover .social-links {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Partner */
+@keyframes logoLoop {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+}
+
+.partners-section {
+  overflow: hidden;
+  padding: 64px 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+.partners-section:before,
+.partners-section:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.partners-section:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.partners-section:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos-slider {
+  overflow-x: hidden;
+}
+
+.overflow {
+  display: flex;
+  padding: 5r em 1rem;
+  overflow: hidden;
+}
+
+.logos-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: logoLoop 30s linear infinite;
+  -webkit-animation: logoLoop 30s linear infinite;
+}
+
+.logo-item {
+  margin-left: 1rem;
+  padding: 1rem;
+  aspect-ratio: 30/9;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.logo-item img {
+  margin-inline: 2rem;
+}
+/* Partner */
+
+/* Tentang */
+.bg-muted\/30 {
+  background-color: rgba(241, 245, 249, 0.3);
+}
+.text-muted-foreground {
+  color: #64748b;
+}
+
+.text-foreground {
+  color: #0f172a;
+}
+
+.text-muted-foreground {
+  color: #64748b; /* Contoh warna abu-abu untuk teks muted-foreground */
+}
+
+.text-primary {
+  color: #4f46e5; /* Contoh warna biru keunguan untuk 'primary' */
+  /* Sesuaikan dengan warna primary di tema Tailwind Anda */
+}
+.bg-primary\/10 {
+  background-color: rgba(
+    79,
+    70,
+    229,
+    0.1
+  ); /* Contoh warna biru keunguan dengan opasitas 10% */
+}
+
+/* Untuk badge, Anda bisa mendefinisikan varian di sini atau menggunakan kelas Tailwind standar */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem; /* rounded-md */
+  border: 1px solid #e5e7eb; /* border */
+  background-color: transparent; /* bg-transparent */
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 600; /* font-semibold */
+  color: #4b5563; /* text-gray-700 */
+}
+.badge.outline {
+  /* Contoh untuk variant="outline" */
+  border-color: #d1d5db; /* border-gray-300 */
+  color: #4b555b; /* text-gray-600 */
+}
+
+/* Styling untuk Tabs (diambil dari perilaku default Shadcn/ui dengan Tailwind) */
+.tabs-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  background-color: #f3f4f6; /* bg-gray-100 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.25rem; /* p-1 */
+}
+
+.tabs-trigger {
+  padding: 0.75rem 1rem; /* px-4 py-3 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.375rem; /* rounded-md */
+  transition: background-color 0.2s, color 0.2s;
+  color: #4b5563; /* text-gray-600 */
+}
+
+.tabs-trigger:hover {
+  background-color: #e5e7eb; /* hover:bg-gray-200 */
+}
+
+.tabs-trigger.active {
+  background-color: white;
+  color: #1f2937; /* text-gray-900 */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.active {
+  display: block;
+}
+
+/* Styling untuk Card (diambil dari perilaku default Shadcn/ui dengan Tailwind) */
+.custom-card {
+  background-color: white;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-sm */
+  border: 1px solid #e5e7eb; /* border */
+}
+
+.custom-card-header {
+  padding: 1.5rem; /* p-6 */
+  padding-bottom: 0.5rem; /* pb-2 */
+}
+
+.custom-card-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.custom-card-description {
+  font-size: 0.875rem; /* text-sm */
+  color: #64748b; /* text-gray-500 */
+}
+
+.custom-card-content {
+  padding: 1.5rem; /* p-6 */
+  padding-top: 0; /* pt-0 */
+}
+
+.text-muted-foreground {
+  color: #64748b; /* Contoh warna abu-abu untuk teks muted-foreground */
+}
+.text-primary-theme {
+  /* Mengganti text-primary menjadi text-primary-theme */
+  color: #4f46e5; /* Contoh warna biru keunguan untuk 'primary' */
+  /* Sesuaikan dengan warna primary di tema Tailwind Anda */
+}
+
+/* Styling untuk Card (diambil dari perilaku default Shadcn/ui dengan Tailwind) */
+.team-member-card {
+  /* Mengganti custom-card */
+  background-color: white;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-sm */
+  overflow: hidden; /* overflow-hidden */
+}
+
+.team-card-inner-content {
+  /* Mengganti custom-card-content */
+  padding: 0; /* p-0 */
+}
+
+.team-card-text-section {
+  /* Mengganti card-body-padding */
+  padding: 1.5rem; /* p-6 */
+}
+
+.bg-custom-shade {
+  /* Mengganti bg-muted/30 */
+  background-color: rgba(
+    241,
+    245,
+    249,
+    0.3
+  ); /* Contoh warna abu-abu terang dengan opasitas */
+}
+.text-custom-info {
+  /* Mengganti text-muted-foreground */
+  color: #64748b; /* Contoh warna abu-abu untuk teks muted-foreground */
+}
+.text-highlight-color {
+  /* Mengganti text-primary */
+  color: #4f46e5; /* Contoh warna biru keunguan untuk 'primary' */
+  /* Sesuaikan dengan warna primary di tema Tailwind Anda */
+}
+
+/* Styling untuk Card (diambil dari perilaku default Shadcn/ui dengan Tailwind) */
+.certification-item-box {
+  /* Mengganti Card */
+  background-color: white;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-sm */
+  overflow: hidden; /* overflow-hidden */
+}
+
+.certification-box-content {
+  /* Mengganti CardContent */
+  padding: 1.5rem; /* p-6 */
+}
+
+/* Tentang */
+
+/* visi misi */
+.gradient-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  transition: all 0.3s ease;
+}
+.gradient-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@media screen and (max-width: 990px) {
+  /* Navbar */
+  .navbar .box-navbar .menu {
+    display: block;
+  }
+
+  .navbar.scrolling-active .box-navbar i {
+    color: white;
+  }
+
+  .navbar .box-navbar .navigation {
+    display: block;
+  }
+
+  .navbar .box-navbar .navigation {
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .navbar .box-navbar .navigation.menu-active {
+    right: 0;
+  }
+
+  .navbar .box-navbar .navigation ul {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    padding: 70px 30px 0 0;
+  }
+
+  .navbar .box-navbar .navigation.menu-active ul li a {
+    color: white;
+  }
+
+  .navbar .box-navbar .navigation.menu-active ul li a:hover {
+    color: black;
+    background-color: white;
+  }
+
+  .navbar .box-navbar .navigation i.ri-close-line {
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: 53%;
+    left: -20px;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-transform: 100%;
+    -moz-transform: 100%;
+    -ms-transform: 100%;
+    -o-transform: 100%;
+  }
+
+  .navbar .box-navbar .navigation a.join-community-button {
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: 39%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+
+  .navbar .box-navbar .sosmed i {
+    display: none;
+  }
+
+  .navbar .box-navbar .sosmed a {
+    display: none;
+  }
+  /* Navbar */
+
+  /* Header */
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero .box-hero {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .hero .box-hero .box:nth-child(1) {
+    order: 2;
+    text-align: center;
+  }
+
+  .hero .box-hero .box:nth-child(2) {
+    order: 1;
+    text-align: center;
+  }
+
+  .hero .box-hero .box:nth-child(2) img {
+    width: 500px;
+  }
+  /* Header */
+}
+
+@media screen and (max-width: 768px) {
+  .hero .box-hero {
+    row-gap: 30px;
+  }
+
+  .hero .box-hero .box:nth-child(2) img {
+    width: 400px;
+  }
+
+  .partners-section:before,
+  .partners-section:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 0;
+  }
+
+  .partners-section:before {
+    left: 0;
+    background: none;
+  }
+
+  .partners-section:after {
+    right: 0;
+    background: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero .box-hero .box:nth-child(1) h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero .box-hero .box:nth-child(2) {
+    align-self: flex-end;
+  }
+
+  .hero .box-hero .box:nth-child(2) img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hero {
+    padding-top: 0;
+  }
+}

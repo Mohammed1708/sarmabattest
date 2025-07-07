@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- foto Icon -->
+     <link rel="icon" href="../assets/Untitled design (2).png" type="image/png" />
+    <!-- Link css -->
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- Link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/public/aos.css" />
+
+    <!-- Animate Style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Sahabat Merantau</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar fixed z-[9999] w-full transition-all duration-600">
+      <div class="container w-4/5 mx-auto">
+        <div class="box-navbar flex justify-between items-center">
+          <div class="brand">
+            <a href="#">
+              <i
+                ><img
+                  src="../assets/Untitled design (2).png"
+                  alt=""
+                  class="w-16"
+              /></i>
+            </a>
+          </div>
+
+          <div class="navigation">
+            <ul
+              class="flex items-center gap-6 animate__animated animate__fadeInDown animate__delay-1s"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="loker.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Loker</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tentang.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="kontak.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Kontak Kami</a
+                >
+              </li>
+            </ul>
+            <!-- icon close -->
+            <i class="ri-close-line"></i>
+          </div>
+
+          <div
+            class="sosmed animate__animated animate__fadeInDown animate__delay-1s flex justify-center items-center gap-2"
+          >
+            <ul
+              class="nav flex items-center gap-6 animate__animated animate__fadeInDown animate__delay-1s"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="loker.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Loker</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tentang.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="kontak.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Kontak Kami</a
+                >
+              </li>
+            </ul>
+            <a
+              href="https://chat.whatsapp.com/IvFjR5ZKZI15pLUcRuwCEh"
+              target="_blank"
+              class="join-community-button-desktop bg-green-500 text-white font-poppins font-semibold py-1 px-3 rounded-md flex items-center gap-2 animate__animated animate__fadeInDown animate__delay-3s"
+            >
+              Join Komunitas
+              <i class="ri-whatsapp-line text-2xl"></i>
+            </a>
+          </div>
+          <!-- Menu Bar -->
+          <i class="menu text-3xl ri-menu-3-line hidden"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Form -->
+     <form id="contactForm" action="/send-email" method="POST">
+    <div class="py-28 px-[12%]">
+      <div class="max-w-2xl mx-auto">
+        <h2
+          class="font-poppins text-center md:text-5xl sm:text-4xl text-3xl font-bold animate__animated animate__fadeIn animate__delay-1s"
+        >
+          Mari Terhubung
+        </h2>
+
+        <p
+          class="font-poppins text-center max-w-2xl mx-auto mt-5 mb-12 sm:text-base text-xs animate__animated animate__fadeIn animate__delay-1s"
+        >
+          Saya sangat senang mendengar kabar dari Anda! Jika Anda memiliki
+          pertanyaan, komentar, atau masukan, silakan gunakan formulir di bawah
+          ini.
+        </p>
+        <div class="grid grid-container-auto-fit-200 gap-3 mt-10 mb-8">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            required
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white animate__animated animate__fadeInLeft animate__delay-1s"
+            name="name"
+          />
+          <input
+            id="emailForm"
+            type="email"
+            placeholder="Enter your email"
+            required
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white animate__animated animate__fadeInRight animate__delay-1s"
+            name="email"
+          />
+        </div>
+        <textarea
+          rows="6"
+          name="message"
+          id=""
+          placeholder="Enter your message"
+          required
+          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 animate__animated animate__fadeInUp animate__delay-2s"
+        ></textarea>
+        <button
+          type="submit"
+          class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black text-white rounded-full mx-auto hover:bg-black/80 duration-500 animate__animated animate__fadeIn animate__delay-3s"
+        >
+          Submit now
+          <img src="../assets/right-arrow-white.png" alt="" class="w-4" />
+        </button>
+
+        <p id="status"></p>
+      </div>
+    </div>
+    </form>
+
+    <script>
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("status");
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // Disable tombol agar tidak bisa diklik berulang
+    submitButton.disabled = true;
+    submitButton.innerText = "Mengirim...";
+
+    const formData = new FormData(form);
+    const data = new URLSearchParams(formData);
+
+    try {
+      const response = await fetch("/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: data,
+      });
+
+      const text = await response.text();
+
+      // Tampilkan alert berhasil
+      alert("✅ Pesan berhasil dikirim!");
+      // Reset form
+      form.reset();
+      // Update status
+      status.textContent = text;
+    } catch (error) {
+      alert("❌ Terjadi kesalahan saat mengirim pesan.");
+      status.textContent = "Gagal mengirim pesan.";
+    } finally {
+      // Aktifkan kembali tombol
+      submitButton.disabled = false;
+      submitButton.innerText = "Submit now";
+    }
+  });
+</script>
+
+    <!-- Form -->
+
+    <!-- Footer -->
+    <footer
+      class="bg-footer text-gray-100 py-10 px-4"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3
+            class="text-white text-2xl font-semibold mb-4 font-poppins text-center"
+          >
+            Sahabat Merantau
+          </h3>
+          <p class="text-sm font-poppins text-center">
+            Membantu P3MI menemukan calon pekerja yang ingin bekerja di luar
+            negeri, khususnya di Timur Tengah, dengan pendampingan profesional
+            dan terpercaya.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white text-2xl font-semibold mb-4 text-center">
+            Kontak Kami
+          </h3>
+          <p class="text-sm text-center">Email: kontak@sahabatmerantau.com</p>
+          <p class="text-sm text-center">Telepon: +62 882-1100-5743</p>
+          <p class="text-sm text-center">
+            Alamat: Jl. Ruko Newton Square, Nagrak, Kec. Gn. Putri, Kabupaten
+            Bogor, Jawa Barat 16967
+          </p>
+          <div class="flex space-x-4 mt-4 justify-center">
+            <a href="https://www.instagram.com/sahabatmerantau.id/" target="_blank" class="text-gray-100 hover:text-white">
+              <i
+                class="ri-instagram-line text-2xl cursor-pointer transition-all duration-600"
+              ></i>
+            </a>
+            <a href="https://www.tiktok.com/@sahabatmerantau.id" target="_blank" class="text-gray-100 hover:text-white">
+              <i
+                class="ri-tiktok-fill text-2xl cursor-pointer transition-all duration-600"
+              ></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61577258832882" target="_blank" class="text-gray-100 hover:text-white">
+              <i
+                class="ri-facebook-box-fill text-2xl cursor-pointer transition-all duration-600"
+              ></i>
+            </a>
+            <a href="https://www.threads.com/@sahabatmerantau.id?xmt=AQF0QAKCyhhVpOytJaLyUKf1X6-pg5yXTXROxsyrB433fPw" target="_blank" class="text-gray-100 hover:text-white">
+              <i
+                class="ri-threads-fill text-2xl cursor-pointer transition-all duration-600"
+              ></i>
+            </a>
+          </div>
+          <div class="flex space-x-4 mt-4 justify-center">
+            <a
+              href="https://wa.me/6288211005743"
+              target="_blank"
+              class="join-community-button bg-green-500 text-white font-poppins font-semibold py-1 px-3 rounded-md flex items-center gap-2 transition-all duration-600"
+            >
+              Hubungi Kami
+              <i class="ri-whatsapp-line text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-300 mt-10 pt-6 text-center text-sm">
+        <p>&copy; 2025 Sahabat Merantau. Hak Cipta Dilindungi.</p>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Link JS -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/public/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

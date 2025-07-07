@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- foto Icon -->
+     <link rel="icon" href="../assets/Untitled design (2).png" type="image/png" />
+    <!-- Link css -->
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- Link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/public/aos.css" />
+
+    <!-- Animate Style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Sahabat Merantau</title>
+  </head>
+  <body class="scroll-smooth">
+    <!-- Navbar -->
+    <div class="navbar fixed z-[9999] w-full transition-all duration-600">
+      <div class="container w-4/5 mx-auto">
+        <div class="box-navbar flex justify-between items-center">
+          <div class="brand">
+            <a href="#">
+              <i
+                ><img
+                  src="../assets/Untitled design (2).png"
+                  alt=""
+                  class="w-16"
+              /></i>
+            </a>
+          </div>
+
+          <div class="navigation">
+            <ul
+              class="flex items-center gap-6 animate__animated animate__fadeInDown animate__delay-1s"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="loker.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Loker</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tentang.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="kontak.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Kontak Kami</a
+                >
+              </li>
+            </ul>
+            <!-- icon close -->
+            <i class="ri-close-line"></i>
+          </div>
+
+          <div
+            class="sosmed animate__animated animate__fadeInDown animate__delay-1s flex justify-center items-center gap-2"
+          >
+            <ul
+              class="nav flex items-center gap-6 animate__animated animate__fadeInDown animate__delay-1s"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="loker.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Loker</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tentang.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="kontak.html"
+                  class="font-poppins font-light hover:bg-black hover:text-white transition-all duration-300 p-1 hover:rounded-md"
+                  >Kontak Kami</a
+                >
+              </li>
+            </ul>
+            <a
+              href="https://chat.whatsapp.com/IvFjR5ZKZI15pLUcRuwCEh"
+              target="_blank"
+              class="join-community-button-desktop bg-green-500 text-white font-poppins font-semibold py-1 px-3 rounded-md flex items-center gap-2 animate__animated animate__fadeInDown animate__delay-3s"
+            >
+              Join Komunitas
+              <i class="ri-whatsapp-line text-2xl"></i>
+            </a>
+          </div>
+          <!-- Menu Bar -->
+          <i class="menu text-3xl ri-menu-3-line hidden"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- <div class="hero w-4/5 mx-auto min-h-screen grid">
+      <div class="container">
+      <div class="box-hero grid grid-cols-2 gap-x-10 items-center">
+          <div class="box">
+            <h1
+              class="font-poppins text-5xl font-bold leading-tight mb-5 animate__animated animate__fadeInUp"
+            >
+              Lowongan Sahabat Merantau
+            </h1>
+            <p
+              class="font-poppins leading-7 mb-4 animate__animated animate__fadeInUp animate__delay-1s"
+            >
+              Sahabat Merantau adalah platform resmi dan terpercaya untuk
+              informasi lowongan kerja ke luar negeri, berada di bawah naungan
+              PT Amal Ichwan Arindo perusahaan dengan pengalaman lebih dari 30
+              tahun dalam penempatan tenaga kerja migran Indonesia. Hadir
+              sebagai bentuk rebranding dan inovasi, kami siap mendampingi Anda
+              bekerja ke luar negeri secara legal, aman, dan terarah.
+            </p>
+            <a href="tentang.html">
+              <button
+                class="font-poppins p-3 border rounded-md font-semibold cursor-pointer transition-all duration-300 animate__animated animate__fadeInLeft animate__delay-2s"
+              >
+                Pelajari Lebih lanjut
+              </button>
+            </a>
+          </div>
+          <div class="box">
+            <img
+              src="../assets/header-loker.jpg"
+              alt=""
+              class="w-full mx-auto animate__animated animate__fadeInRight animate__delay-2s"
+            />
+          </div>
+        </div> 
+      </div>
+    </div> -->
+
+    <!-- Lowongan Pekerjaan -->
+    <!-- Job Card Section -->
+    <section class="w-4/5 mx-auto pt-36" id="jobcard">
+      <h2
+        class="font-poppins sm:text-3xl text-xl font-semibold text-textCol mb-8 text-center"
+        data-aos="fade-up"
+      >
+        Lowongan Pekerjaan Tersedia
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pb-8">
+        <!-- Nurse / Home Service Card -->
+        <article
+          class="border-0 rounded-lg shadow-md hover:shadow-lg transition p-6 flex flex-col"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            alt="A professional nurse in uniform smiling and ready to work abroad"
+            class="rounded-md mb-4 object-cover h-48 w-full"
+            height="250"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/9ed8c031-529a-4e56-1626-60863fb74779.jpg"
+            width="400"
+          />
+          <h3 class="text-xl font-semibold text-textCol mb-2">
+            Nurse / Home Service
+          </h3>
+          <p class="text-gray-600 flex-grow">
+            Kesempatan kerja sebagai Nurse / Home Service di Timur Tengah dengan
+            pendampingan penuh dan legal.
+          </p>
+          <a
+            class="mt-4 inline-block text-center bg-teal-600 text-white py-2 rounded-md font-semibold hover:bg-teal-700 transition"
+            href="#modalboxnurse"
+          >
+            Lihat Lowongan
+          </a>
+        </article>
+        <!-- Pop Up Job Card Nurse / Home Service -->
+        <div id="modalboxnurse" class="modal">
+          <div class="modalcontent">
+            <h1 class="sm:text-3xl text-xl font-bold text-gray-800 mb-2">
+              Nurse / Home Service
+            </h1>
+            <p class="text-gray-600 mb-6">Riyadh, Arab Saudi</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">
+                  Tipe Pekerjaan
+                </h2>
+                <p class="text-gray-800">Full-time</p>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">Gaji</h2>
+                <p class="text-gray-800">
+                  Riyal 5000-6000(lisence Promatic) & 4000 (Tanpa lisence
+                  Promatic)
+                </p>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Deskripsi Pekerjaan
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Dibutuhkan Segera! Nurse / Home Service di Riyadh, Arab Saudi
+              (Khusus Wanita).
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Persyaratan
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>
+                Pengalaman Minimal 3 Tahun Di Rumah Sakit (Bidan Dipersilahkan
+                Melamar)
+              </li>
+              <li>Memiliki lisence Promatic</li>
+              <li>Umur 25-37 Tahun</li>
+              <li>Memiliki Paspor</li>
+              <li>Minimal Memahami Bahasa Inggris Dasar</li>
+              <li>Khusus Wanita</li>
+            </ul>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">Fasilitas</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+              <li>Tempat Tinggal</li>
+              <li>Makan & Akomodasi (Selama Masa Contract)</li>
+            </ul>
+
+            <div class="flex justify-end">
+              <a href="https://forms.gle/Wkn61hKsy7w25D4Q7" target="_blank">
+                <button
+                  class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-md"
+                >
+                  Lamar Sekarang
+                </button>
+              </a>
+            </div>
+            <a href="#jobcard" class="modalclose">&times;</a>
+          </div>
+        </div>
+        <!-- Pop Up Job Card Nurse / Home Service  -->
+        <!-- Nurse / Home Service Card -->
+
+        <!-- Driver / Rider Card -->
+        <article
+          class="border-0 rounded-lg shadow-md hover:shadow-lg transition p-6 flex flex-col"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <img
+            alt="A compassionate caregiver assisting an elderly person, representing caregiver job abroad"
+            class="rounded-md mb-4 object-cover h-48 w-full"
+            height="250"
+            loading="lazy"
+            src="../assets/Rider.jpg"
+            width="400"
+          />
+          <h3 class="text-xl font-semibold text-textCol mb-2">
+            Driver / Rider
+          </h3>
+          <p class="text-gray-600 flex-grow">
+            Kesempatan kerja sebagai Driver / Rider di Timur Tengah dengan
+            pendampingan penuh dan legal.
+          </p>
+          <a
+            class="mt-4 inline-block text-center bg-teal-600 text-white py-2 rounded-md font-semibold hover:bg-teal-700 transition"
+            href="#modalboxcaregiver"
+          >
+            Lihat Lowongan
+          </a>
+        </article>
+        <!-- Pop Up Job Card Driver / Rider  -->
+        <div id="modalboxcaregiver" class="modal">
+          <div class="modalcontent">
+            <h1 class="sm:text-3xl text-xl font-bold text-gray-800 mb-2">
+              Driver / Rider
+            </h1>
+            <p class="text-gray-600 mb-6">Dubai, Uni Emirat Arab</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">
+                  Tipe Pekerjaan
+                </h2>
+                <p class="text-gray-800">Full-time</p>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">Gaji</h2>
+                <p class="text-gray-800">
+                  Dirham 1550 (Plus Lembur 7 Dirham Per-Order)
+                </p>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Deskripsi Pekerjaan
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Dibutuhkan Segera! Driver / Rider di Dubai, Uni Emirat Arab.
+              Bekerja food delivery seperti GoFood/GrabFood, bekerja 9 Jam
+              dibawah perusahaan velo logistic.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Persyaratan
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>Pengalaman minimal 3 tahun</li>
+              <li>Umur 21-40 Tahun</li>
+              <li>Memiliki SIM Motor</li>
+              <li>Memiliki Paspor</li>
+              <li>Minimal Memahami Bahasa Inggris Basic</li>
+              <li>CV Bahasa Inggris</li>
+            </ul>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">Benefit</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+              <li>Asuransi Hidup</li>
+              <li>Mendapatkan Motor</li>
+              <li>Mendapatkan SIM Dubai</li>
+            </ul>
+
+            <div class="flex justify-end">
+              <a href="https://forms.gle/23qyALinAcuVLbRx9" target="_blank">
+                <button
+                  class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-md"
+                >
+                  Lamar Sekarang
+                </button>
+              </a>
+            </div>
+            <a href="#jobcard" class="modalclose">&times;</a>
+          </div>
+        </div>
+        <!-- Pop Up Job Card Driver / Rider -->
+
+        <!-- Driver / Rider Card -->
+
+        <!-- Caregiver Card -->
+        <article
+          class="border-0 rounded-lg shadow-md hover:shadow-lg transition p-6 flex flex-col"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <img
+            alt="A professional spa therapist providing a relaxing massage, representing spa therapist job abroad"
+            class="rounded-md mb-4 object-cover h-48 w-full"
+            height="250"
+            loading="lazy"
+            src="../assets/Caregiver.png"
+            width="400"
+          />
+          <h3 class="text-xl font-semibold text-textCol mb-2">Caregiver</h3>
+          <p class="text-gray-600 flex-grow">
+            Peluang kerja sebagai Caregiver di Timur Tengah dengan pendampingan
+            dan legalitas terjamin.
+          </p>
+          <a
+            class="mt-4 inline-block text-center bg-teal-600 text-white py-2 rounded-md font-semibold hover:bg-teal-700 transition"
+            href="#modalboxspatherapist"
+          >
+            Lihat Lowongan
+          </a>
+        </article>
+        <!-- Pop Up Job Caregiver -->
+        <div id="modalboxspatherapist" class="modal">
+          <div class="modalcontent">
+            <h1 class="sm:text-3xl text-xl font-bold text-gray-800 mb-2">
+              Caregiver
+            </h1>
+            <p class="text-gray-600 mb-6">Dubai, Uni Emirat Arab</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">
+                  Tipe Pekerjaan
+                </h2>
+                <p class="text-gray-800">Full-time</p>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">Gaji</h2>
+                <p class="text-gray-800">Dirham 2500</p>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Deskripsi Pekerjaan
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Dibutuhkan Segera! Caregiver di Dubai, Uni Emirat Arab. Bekerja di
+              rumah sakit minimal kerja 10 jam.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Persyaratan
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>
+                Pengalaman Minimal 1 Tahun Di Keperawatan (Bidan Dipersilahkan
+                Melamar)
+              </li>
+              <li>Pendidikan Minimal D3-S1</li>
+              <li>Memiliki Paspor</li>
+              <li>Minimal Memahami Bahasa Inggris Dasar</li>
+              <li>CV Bahasa Inggris</li>
+            </ul>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">Benefit</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+              <li>Makan & Tempat Tinggal (Selama 3 Bulan)</li>
+            </ul>
+
+            <div class="flex justify-end">
+              <a href="https://forms.gle/zYXdnMwCJmXpwbQX8" target="_blank">
+                <button
+                  class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-md"
+                >
+                  Lamar Sekarang
+                </button>
+              </a>
+            </div>
+            <a href="#jobcard" class="modalclose">&times;</a>
+          </div>
+        </div>
+        <!-- Caregiver Card -->
+        <!-- Pop Up Job Card Caregiver  -->
+
+        <!-- Salon & Spa Therapist Card -->
+        <article
+          class="border-0 rounded-lg shadow-md hover:shadow-lg transition p-6 flex flex-col"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <img
+            alt="A professional spa therapist providing a relaxing massage, representing spa therapist job abroad"
+            class="rounded-md mb-4 object-cover h-48 w-full"
+            height="250"
+            loading="lazy"
+            src="../assets/Hair Beauty Salon.png"
+            width="400"
+          />
+          <h3 class="text-xl font-semibold text-textCol mb-2">
+            Salon & Spa Therapist
+          </h3>
+          <p class="text-gray-600 flex-grow">
+            Peluang kerja sebagai Salon & Spa Therapist di Timur Tengah dengan
+            pendampingan dan legalitas terjamin.
+          </p>
+          <a
+            class="mt-4 inline-block text-center bg-teal-600 text-white py-2 rounded-md font-semibold hover:bg-teal-700 transition"
+            href="#modalboxsalon&spatherapist"
+          >
+            Lihat Lowongan
+          </a>
+        </article>
+        <!-- Pop Up Job Card Salon & Spa Therapist -->
+        <div id="modalboxsalon&spatherapist" class="modal">
+          <div class="modalcontent">
+            <h1 class="sm:text-3xl text-xl font-bold text-gray-800 mb-2">
+              Salon & Spa Therapist
+            </h1>
+            <p class="text-gray-600 mb-6">Riyadh, Arab Saudi</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">
+                  Tipe Pekerjaan
+                </h2>
+                <p class="text-gray-800">Full-time</p>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">Gaji</h2>
+                <p class="text-gray-800">Riyal 1500</p>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Deskripsi Pekerjaan
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Dibutuhkan Segera! Salon & Spa Therapist tanpa hijab di Riyadh,
+              Arab Saudi. Dengan keahlian creambath, menipedi, spa, dan nail
+              art.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Persyaratan
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>Pengalaman Minimal 1 Tahun</li>
+              <li>Umur 21-35 Tahun</li>
+              <li>Memiliki Paspor</li>
+              <li>Minimal Memahami Bahasa Inggris Dalam Hal Kecantikan</li>
+              <li>CV Bahasa Inggris</li>
+            </ul>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">Benefit</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+              <li>Makan & Tempat Tinggal (Selama 3 Bulan)</li>
+            </ul>
+
+            <div class="flex justify-end">
+              <a href="https://forms.gle/FpxAuZ9hn5xVEnGX7" target="_blank">
+                <button
+                  class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-md"
+                >
+                  Lamar Sekarang
+                </button>
+              </a>
+            </div>
+            <a href="#jobcard" class="modalclose">&times;</a>
+          </div>
+        </div>
+        <!-- Pop Up Job Card Salon & Spa Therapist  -->
+        <!-- Salon & Spa Therapist Card -->
+
+        <!-- Nail Technician Card -->
+        <article
+          class="border-0 rounded-lg shadow-md hover:shadow-lg transition p-6 flex flex-col"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <img
+            alt="A professional spa therapist providing a relaxing massage, representing spa therapist job abroad"
+            class="rounded-md mb-4 object-cover h-48 w-full"
+            height="250"
+            loading="lazy"
+            src="../assets/Nail Technician.jpeg"
+            width="400"
+          />
+          <h3 class="text-xl font-semibold text-textCol mb-2">
+            Nail Technician
+          </h3>
+          <p class="text-gray-600 flex-grow">
+            Peluang kerja sebagai Nail Technician di Timur Tengah dengan
+            pendampingan dan legalitas terjamin.
+          </p>
+          <a
+            class="mt-4 inline-block text-center bg-teal-600 text-white py-2 rounded-md font-semibold hover:bg-teal-700 transition"
+            href="#modalboxnailtechnician"
+          >
+            Lihat Lowongan
+          </a>
+        </article>
+        <!-- Pop Up Job Card Nail Technician -->
+        <div id="modalboxnailtechnician" class="modal">
+          <div class="modalcontent">
+            <h1 class="sm:text-3xl text-xl font-bold text-gray-800 mb-2">
+              Nail Technician
+            </h1>
+            <p class="text-gray-600 mb-6">Dubai, Uni Emirat Arab</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">
+                  Tipe Pekerjaan
+                </h2>
+                <p class="text-gray-800">Full-time</p>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold text-gray-700 mb-1">Gaji</h2>
+                <p class="text-gray-800">Dirham 1500</p>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Deskripsi Pekerjaan
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Dibutuhkan Segera! Nail Technician (khusus wanita) di Dubai, Uni
+              Emirat Arab.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              Persyaratan
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>Pengalaman Minimal 2 Tahun</li>
+              <li>Pendidikan Minimal SMA</li>
+              <li>Minimal Umur 25-40</li>
+              <li>Memiliki Paspor</li>
+              <li>Minimal Memahami Bahasa Inggris Dasar</li>
+              <li>CV Bahasa Inggris</li>
+              <li>Khusus Wanita</li>
+            </ul>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">Benefit</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+              <li>Makan & Tempat Tinggal</li>
+            </ul>
+
+            <div class="flex justify-end">
+              <a href="https://forms.gle/iJYBzBpZf9XbVGib9" target="_blank">
+                <button
+                  class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-md"
+                >
+                  Lamar Sekarang
+                </button>
+              </a>
+            </div>
+            <a href="#jobcard" class="modalclose">&times;</a>
+          </div>
+        </div>
+        <!-- Pop Up Job Card Nail Technician  -->
+        <!-- Nail Technician Card -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-footer text-gray-100 py-10 px-4"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3
+            class="text-white text-2xl font-semibold mb-4 font-poppins text-center"
+          >
+            Sahabat Merantau
+          </h3>
+          <p class="text-sm font-poppins text-center">
+            Membantu P3MI menemukan calon pekerja yang ingin bekerja di luar
+            negeri, khususnya di Timur Tengah, dengan pendampingan profesional
+            dan terpercaya.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white text-2xl font-semibold mb-4 text-center">
+            Kontak Kami
+          </h3>
+          <p class="text-sm text-center">Email: kontak@sahabatmerantau.com</p>
+          <p class="text-sm text-center">Telepon: +62 882-1100-5743</p>
+          <p class="text-sm text-center">
+            Alamat: Jl. Ruko Newton Square, Nagrak, Kec. Gn. Putri, Kabupaten
+            Bogor, Jawa Barat 16967
+          </p>
+          <div class="flex space-x-4 mt-4 justify-center">
+            <a href="https://www.instagram.com/sahabatmerantau.id/" target="_blank" class="text-gray-100 hover:text-white">
+              <i
+                class="ri-instagram-line text-2xl cursor-pointer transition-all duration-600"
+              ></i>
+            </a>
+            <a href="https://www.tiktok.com/@sahabatmerantau.id" target="_blank" class="text-gray-100 hover:text-white">
+              <i
+                class="ri-tiktok-fill text-2xl cursor-pointer transition-all duration-600"
+              ></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61577258832882" target="_blank" class="text-gray-100 hover:text-white">
+              <i
+                class="ri-facebook-box-fill text-2xl cursor-pointer transition-all duration-600"
+              ></i>
+            </a>
+            <a href="https://www.threads.com/@sahabatmerantau.id?xmt=AQF0QAKCyhhVpOytJaLyUKf1X6-pg5yXTXROxsyrB433fPw" target="_blank" class="text-gray-100 hover:text-white">
+              <i
+                class="ri-threads-fill text-2xl cursor-pointer transition-all duration-600"
+              ></i>
+            </a>
+          </div>
+          <div class="flex space-x-4 mt-4 justify-center">
+            <a
+              href="https://wa.me/6288211005743"
+              target="_blank"
+              class="join-community-button bg-green-500 text-white font-poppins font-semibold py-1 px-3 rounded-md flex items-center gap-2 transition-all duration-600"
+            >
+              Hubungi Kami
+              <i class="ri-whatsapp-line text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-300 mt-10 pt-6 text-center text-sm">
+        <p>&copy; 2025 Sahabat Merantau. Hak Cipta Dilindungi.</p>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Link JS -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/public/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- pop up no scroll -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const body = document.body;
+
+        // Fungsi untuk menonaktifkan scroll
+        function disableScroll() {
+          body.classList.add("no-scroll");
+        }
+
+        // Fungsi untuk mengaktifkan scroll
+        function enableScroll() {
+          body.classList.remove("no-scroll");
+        }
+
+        // Mendapatkan semua elemen modal yang memiliki kelas 'modal'
+        const modals = document.querySelectorAll(".modal");
+
+        window.addEventListener("hashchange", function () {
+          let modalIsOpen = false;
+          modals.forEach((modal) => {
+            if (window.location.hash === "#" + modal.id) {
+              modalIsOpen = true;
+            }
+          });
+
+          if (modalIsOpen) {
+            disableScroll();
+          } else {
+            enableScroll();
+          }
+        });
+
+        let initialModalIsOpen = false;
+        modals.forEach((modal) => {
+          if (window.location.hash === "#" + modal.id) {
+            initialModalIsOpen = true;
+          }
+        });
+        if (initialModalIsOpen) {
+          disableScroll();
+        }
+
+        modals.forEach((modal) => {
+          const closeButton = modal.querySelector(".modalclose");
+          if (closeButton) {
+            closeButton.addEventListener("click", function () {
+              enableScroll();
+            });
+          }
+
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+              window.location.hash = "#jobcard";
+            }
+          });
+        });
+      });
+    </script>
+    <!-- pop up no scroll -->
+  </body>
+</html>
