@@ -8,7 +8,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('public')); // agar bisa akses index.html
+app.use(express.static(__dirname)); // agar bisa akses index.html
 
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
